@@ -1,0 +1,46 @@
+
+========================================================
+v1.4.0
+--------------------------------------------------------
+	- Suppression de la dépendance avec glade via l'utilisation de Gtk::Builder (à tester sous Windows)
+
+========================================================
+v1.3
+--------------------------------------------------------
+	- Correction du nombre de chanson total passé qui n'était jamais remis à zéro.
+	- Calcule de "Use Freq" modifié pour être en "pour 1000" du total passé
+		calcul : (Used * 1000) / Total_Used
+	- Ajout du serveur MIO permettant de récupérer la liste filtré et de charger une playlist via le reseau. Le fichier de config de MIO configMIO.csv contient le chemin de sortie du fichier de log. Il est à copier dans le dossier de config du toyundaManager.
+
+========================================================
+v1.2
+--------------------------------------------------------
+	- ajout du menu Import Config : permet de charger les informations d'un autre profile dans le profile courant
+	- Modification de l'import de data : permet de choisir les colonnes à prendre en compte. La fenêtre de merge est ouverte dans le cas ou certaines lignes n'ont pas de correspondance. Puis une fenêtre permet de choisir les colonnes à importer
+	- Suppression des ID dans les fichiers INI. La liaison en cas de renomage de fichier se fait manuellement, via une fenêtre de "Merge", plus laborieux mais plus fiable. Ceci permet de supprimer le besoin d'écrire dans les fichiers ini
+	- Renomage des fichiers liés à un profile. Maintenant, le nom des fichier est le meme quelque soit le profile, seul le dossier est différent (simplifie la copie de profile)
+	- Séparation du niveau de debug console et fichier log dans les config
+	- Sauvegarde d'un backup des données d'un profile (tourne sur 5 fichiers)
+	- Miniaturisation de la fenêtre lorsqu'on lance la playlist. La fenêtre s'agrandi automatiquement à la fin de la playlist.
+	- Création/Modification de style d'affichage d'une liste.
+	- Gestion des styles associés à une colonnes.
+	- Ajout de la colonne "Use Freq" représentant la fréquence (en pourcent) d'utilisation d'un titre en fonction du nombre total de titre passé et du nombre total de titre disponible. 
+		calcul : (Used * nb_titre_dispo * 100) / Total_Used
+	- Popup sur la playlist identique à celle de la séléction de titre.
+	- Changement dans l'onglet config : on ne choisi plus le séparateur de fichier, mais l'OS, ce qui permet de définir le séparateur et plus tard d'autre différence si nécessaire.
+	- Ajout du choix de l'executable mplayer-toyunda. Pour le cas ou il ne serait pas dans le path.
+	- corrections mineurs.
+
+========================================================
+v1.1
+--------------------------------------------------------
+	- Netoyage du code
+	- Gestion du fichier de config (config.ini) par passage en ligne de commande.
+	- Ajout d'un petit read me expliquant la configuration du fichier config.ini (le reste étant dans l'IHM)
+
+
+========================================================
+v1.0
+--------------------------------------------------------
+	- Première version stable
+	- Création du changlog.

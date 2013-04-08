@@ -1,0 +1,23 @@
+
+
+======================
+TODO Toyunda Manager
+======================
+
+/	Gestions affichage des colonnes
+/	Gestionnaire des colonnes à afficher
+/	Règle de gestion des updates après génération
+*	Règle de gestion des updates après ajout dans la liste
+*	Règle de gestion des updates après suppression de la liste
+/	Règle de gestion des filtres
+*	IHM construction règle Update
+/	IHM construction Filtres
+/	Filtrage de la liste affichée
+/	popup option par karaoke
+/	Update durée vidéo liste
+/	Update durée unitaire
+*	update rythm liste
+*	update rythm unitaire
+/	recherche dans la liste
+
+

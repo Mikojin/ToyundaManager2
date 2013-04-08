@@ -1,0 +1,6 @@
+id;value;comment
+Logger.log;debugClientMIO.log;Chemin du fichier de log
+Logger.debug;100;Niveau de debug de la console
+Logger.debugFile;100;Niveau de debug dans le fichier de log
+ServerMIO.port;6868;port du serveur MIO
+ServerMIO.connection.frequency;1;frequence de test de connection
