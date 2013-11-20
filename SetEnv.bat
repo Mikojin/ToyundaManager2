@@ -2,7 +2,7 @@
 
 set OLD_PATH=%PATH%
 
-set GTK_BASEPATH="C:\Program Files\GTK2-Runtime"
+set GTK_BASEPATH="C:\Program Files\ruby\lib\GTK"
 
 set RUBY_PATH="C:\Program Files\ruby"
 

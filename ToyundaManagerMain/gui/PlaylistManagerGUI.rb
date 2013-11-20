@@ -784,8 +784,11 @@ module GUI
         #~ log("event : "+pEvent.x.to_s+" x "+pEvent.y.to_s)
         # select current row
         @popupView = getViewSelectTitle()
+				select = @popupView.selection
+				return if select.nil?
         path,column,*other = @popupView.get_path_at_pos(pEvent.x, pEvent.y)
-        @popupView.selection.select_path(path)
+				return if path.nil?
+        select.select_path(path)
         # display popup menu
         @glade[W_MENU_CTX_SELECT_TITLE].popup(nil, nil, pEvent.button, pEvent.time)
 			end
@@ -796,8 +799,11 @@ module GUI
         #~ log("event : "+pEvent.x.to_s+" x "+pEvent.y.to_s)
         # select current row
         @popupView = getViewCurrentPlaylist()
+				select = @popupView.selection
+				return if select.nil?
         path,column,*other = @popupView.get_path_at_pos(pEvent.x, pEvent.y)
-        @popupView.selection.select_path(path)
+        return if path.nil?
+				select.select_path(path)
         # display popup menu
         @glade[W_MENU_CTX_SELECT_TITLE].popup(nil, nil, pEvent.button, pEvent.time)
 			end
