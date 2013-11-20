@@ -38,7 +38,7 @@ module GUI
     # =================================
     # Constants
     # ---------------------------------
-    GLADE_FILE = $root + "glade/ListSelector.ui"
+    GLADE_FILE = $root + "glade/ListSelector"
     W_WINDOW = "windowSelector"
     W_VIEW = "treeviewSelector"
     W_LABEL_SELECTED = "labelLegendSelected"

@@ -47,7 +47,7 @@ module GUI
     # =================================
     # Constants
     # ---------------------------------
-	GLADE_FILE = $root+"glade/ToyundaManager.ui"
+		GLADE_FILE = $root+"glade/ToyundaManager"
     W_WINDOW = "toyundaManager"
     W_TASK_C = "taskC"
     W_TASK_L = "taskL"

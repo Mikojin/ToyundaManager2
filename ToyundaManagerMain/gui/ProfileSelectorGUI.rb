@@ -42,7 +42,7 @@ module GUI
     # =================================
     # Constants
     # ---------------------------------
-    GLADE_FILE = $root+"glade/ProfileSelector.ui"
+    GLADE_FILE = $root+"glade/ProfileSelector"
     W_WINDOW = "profileSelector"
     W_PROFILE_COMBO = "comboboxProfile"
     W_PROFILE = "entryLogin"
