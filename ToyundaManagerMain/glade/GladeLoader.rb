@@ -17,10 +17,10 @@
 puts "require GladeLoader"
 
 # ----------------------------------------------------------
-begin
+begin 
 	require 'libglade2'
-rescue
-	log("Cannot import libglade2")
+rescue LoadError
+	puts "Cannot import libglade2"
 end
 require 'gtk2'
 require $root + 'gui/GUI'
