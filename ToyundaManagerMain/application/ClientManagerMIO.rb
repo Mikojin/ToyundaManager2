@@ -18,7 +18,7 @@ puts "require ServerMIO"
 # ----------------------------------------------------------
 require 'fileutils'
 require $root+"Common"
-require $root+"Tools/tools"
+require $root+"Tools/Tools"
 require $root+"Network/Network"
 require $root+ "constants/CstsKaraoke"
 
